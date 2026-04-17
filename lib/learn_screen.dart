@@ -48,8 +48,7 @@ class LearnScreen extends StatelessWidget {
                 width: 150,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  border: Border.all(
-                      color: const Color(0xFF2E7D32), width: 3),
+                  border: Border.all(color: const Color(0xFF2E7D32), width: 3),
                 ),
                 child: ClipOval(
                   child: Image.asset(
@@ -163,8 +162,8 @@ class _CartePresident extends StatelessWidget {
               // Nom
               Text(
                 president.nom,
-                style: const TextStyle(
-                    fontWeight: FontWeight.bold, fontSize: 12),
+                style:
+                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                 textAlign: TextAlign.center,
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
@@ -172,15 +171,14 @@ class _CartePresident extends StatelessWidget {
               // Pays
               Text(
                 president.pays,
-                style: TextStyle(
-                    fontSize: 10, color: Colors.grey.shade700),
+                style: TextStyle(fontSize: 10, color: Colors.grey.shade700),
               ),
               const Divider(height: 8),
               // Période
               Text(
                 president.mandat,
-                style: const TextStyle(
-                    fontSize: 9, fontStyle: FontStyle.italic),
+                style:
+                    const TextStyle(fontSize: 9, fontStyle: FontStyle.italic),
               ),
               const SizedBox(height: 2),
               // Fait

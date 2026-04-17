@@ -30,19 +30,27 @@ class _GameScreenState extends State<GameScreen> {
   // --- Config niveau ---
   int get _viesInitiales {
     switch (widget.niveau) {
-      case 'facile': return 5;
-      case 'moyen': return 3;
-      case 'difficile': return 2;
-      default: return 5;
+      case 'facile':
+        return 5;
+      case 'moyen':
+        return 3;
+      case 'difficile':
+        return 2;
+      default:
+        return 5;
     }
   }
 
   int get _tempsParTour {
     switch (widget.niveau) {
-      case 'facile': return 15;
-      case 'moyen': return 10;
-      case 'difficile': return 5;
-      default: return 15;
+      case 'facile':
+        return 15;
+      case 'moyen':
+        return 10;
+      case 'difficile':
+        return 5;
+      default:
+        return 15;
     }
   }
 
@@ -50,28 +58,40 @@ class _GameScreenState extends State<GameScreen> {
 
   String get _niveauLabel {
     switch (widget.niveau) {
-      case 'facile': return 'Facile';
-      case 'moyen': return 'Moyen';
-      case 'difficile': return 'Difficile';
-      default: return '';
+      case 'facile':
+        return 'Facile';
+      case 'moyen':
+        return 'Moyen';
+      case 'difficile':
+        return 'Difficile';
+      default:
+        return '';
     }
   }
 
   String get _niveauDescription {
     switch (widget.niveau) {
-      case 'facile': return 'Mode classique, 5 vies et 15 secondes par tour.';
-      case 'moyen': return '3 vies, 10 secondes par tour.';
-      case 'difficile': return '2 vies, 5 secondes, trouvez le nom via les indices.';
-      default: return '';
+      case 'facile':
+        return 'Mode classique, 5 vies et 15 secondes par tour.';
+      case 'moyen':
+        return '3 vies, 10 secondes par tour.';
+      case 'difficile':
+        return '2 vies, 5 secondes, trouvez le nom via les indices.';
+      default:
+        return '';
     }
   }
 
   Color get _couleurNiveau {
     switch (widget.niveau) {
-      case 'facile': return const Color(0xFF2E7D32);
-      case 'moyen': return const Color(0xFFF9A825);
-      case 'difficile': return Colors.red.shade700;
-      default: return const Color(0xFF2E7D32);
+      case 'facile':
+        return const Color(0xFF2E7D32);
+      case 'moyen':
+        return const Color(0xFFF9A825);
+      case 'difficile':
+        return Colors.red.shade700;
+      default:
+        return const Color(0xFF2E7D32);
     }
   }
 
@@ -284,9 +304,8 @@ class _GameScreenState extends State<GameScreen> {
 
             // Grille ou liste selon niveau
             Expanded(
-              child: _modeAvance
-                  ? _listeChoixNoms()
-                  : _grilleImagesPresidents(),
+              child:
+                  _modeAvance ? _listeChoixNoms() : _grilleImagesPresidents(),
             ),
           ],
         ),
@@ -350,7 +369,8 @@ class _GameScreenState extends State<GameScreen> {
                 fit: BoxFit.cover,
                 errorBuilder: (_, __, ___) => Container(
                   color: Colors.grey.shade300,
-                  child: Icon(Icons.person, size: 50, color: Colors.grey.shade600),
+                  child:
+                      Icon(Icons.person, size: 50, color: Colors.grey.shade600),
                 ),
               ),
             ),
@@ -403,7 +423,8 @@ class _GameScreenState extends State<GameScreen> {
                   fit: BoxFit.cover,
                   errorBuilder: (_, __, ___) => Container(
                     color: Colors.grey.shade200,
-                    child: Icon(Icons.person, size: 40, color: Colors.grey.shade500),
+                    child: Icon(Icons.person,
+                        size: 40, color: Colors.grey.shade500),
                   ),
                 ),
               ),
@@ -449,7 +470,8 @@ class _GameScreenState extends State<GameScreen> {
     return Column(
       children: [
         Icon(icone, color: Colors.white),
-        Text(label, style: const TextStyle(color: Colors.white70, fontSize: 12)),
+        Text(label,
+            style: const TextStyle(color: Colors.white70, fontSize: 12)),
         Text(
           valeur,
           style: const TextStyle(
