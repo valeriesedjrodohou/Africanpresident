@@ -19,7 +19,7 @@ L'application est un **jeu éducatif** : le joueur doit identifier un président
 
 | Membre | Rôle |
 |---|---|
-| ALAYE Joseph |  _(Respo)_ Développement Flutter (logique de jeu) |
+| ALAYE Joseph   _(Respo)_ | Développement Flutter (logique de jeu) |
 | **DOHOU Valérie** _(moi)_ | Données, tests |
 | SAPHOU Latifath | Design, documentation |
 
